@@ -4,8 +4,8 @@
 mv ~/.vim ~/.vim_old
 pip install flake8
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-git clone https://github.com/xxshiyao/vimrc.git ~/
-cp ~/vimrc/.vimrc ~/
+git clone https://github.com/xxshiyao/vimrc.git ~/.vim/vimrc
+cp ~/.vim/vimrc/.vimrc ~/
 vim
 :BundleInstall
 ```
