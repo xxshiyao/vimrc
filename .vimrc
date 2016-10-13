@@ -42,12 +42,11 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'mbriggs/mark.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'vim-airline/vim-airline'
-"Plugin 'Valloric/YouCompleteMe'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'nvie/vim-flake8'
 "color
-Plugin 'jnurmine/Zenburn'
+Plugin 'darkburn'
 
 call vundle#end()
 "===============plugin and color list=============
@@ -73,7 +72,7 @@ set showcmd
 set ignorecase
 set smartcase
 set t_Co=256
-colorscheme zenburn
+colorscheme darkburn
 set backspace=indent,eol,start
 set expandtab
 set showmatch
@@ -82,7 +81,7 @@ set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 "set termencoding=gb18030
 "set termencoding=utf-8
 "set encoding=utf-8
-set encoding=gbk
+"set encoding=gbk
 
 set foldmethod=syntax
 set foldlevel=99
