@@ -214,6 +214,11 @@ let g:neocomplcache_enable_at_startup = 1
 nmap <F2> :NERDTree  <CR>
 "======nerdtree setting end===========
 
+"======The-NERD-Commenter setting start===========
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+"======The-NERD-Commenter setting end===========
+
 "======minbufexplorer setting start======
 "<C-Tab> <C-S-Tab>
 let g:miniBufExplMapCTabSwitchBufs = 1
