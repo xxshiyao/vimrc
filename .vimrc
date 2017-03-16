@@ -42,8 +42,8 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'mbriggs/mark.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
+" Plugin 'tmhedberg/SimpylFold'
+" Plugin 'vim-scripts/indentpython.vim'
 Plugin 'nvie/vim-flake8'
 "color
 Plugin 'darkburn'
@@ -76,6 +76,7 @@ colorscheme darkburn
 set backspace=indent,eol,start
 set expandtab
 set showmatch
+set nowrap
 set noerrorbells
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 "set termencoding=gb18030
@@ -126,7 +127,7 @@ au BufNewFile,BufRead *.py
             \ set tabstop=4 |
             \ set softtabstop=4 |
             \ set shiftwidth=4 |
-            \ set textwidth=79 |
+            " \ set textwidth=120 |
             \ set expandtab |
             \ set autoindent |
             \ set fileformat=unix
@@ -332,7 +333,7 @@ let g:ctrlp_extensions = ['funky']
 
 "===========SimpylFold setting start================
 let g:SimpylFold_docstring_preview=1
-"===========SimpylFold setting start================
+"===========SimpylFold setting end================
 
 "===========YCM setting start================
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
@@ -347,6 +348,25 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_cache_omnifunc=0
 let g:ycm_complete_in_strings = 1
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-"===========YCM setting start================
+"===========YCM setting end================
 
+"===========DoxygenToolkit setting start===========
+let g:DoxygenToolkit_briefTag_funcName = "yes"
+
+let g:DoxygenToolkit_commentType = "python"
+" let g:DoxygenToolkit_briefTag_pre = "\\brief "
+" let g:DoxygenToolkit_templateParamTag_pre = "\\tparam "
+" let g:DoxygenToolkit_paramTag_pre = "\\param "
+" let g:DoxygenToolkit_returnTag = "\\return "
+" let g:DoxygenToolkit_throwTag_pre = "\\throw " " @exception is also valid
+" let g:DoxygenToolkit_fileTag = "\\file "
+" let g:DoxygenToolkit_dateTag = "\\date "
+" let g:DoxygenToolkit_authorTag = "\\author "
+" let g:DoxygenToolkit_versionTag = "\\version "
+" let g:DoxygenToolkit_blockTag = "\\name "
+" let g:DoxygenToolkit_classTag = "\\class "
+" let g:DoxygenToolkit_authorName = "Qian Gu, guqian110@gmail.com"
+let g:doxygen_enhanced_color = 1
+"let g:load_doxygen_syntax = 1
+"===========DoxygenToolkit setting end===========
 "===============plugins config===============
